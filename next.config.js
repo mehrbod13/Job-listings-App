@@ -4,5 +4,8 @@ const nextConfig = {
   assetPrefix: '/Job-listings-App/',
   images: { unoptimized: true },
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: '/Job-listings-App',
+  },
 }
 module.exports = nextConfig
