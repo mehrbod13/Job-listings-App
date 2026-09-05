@@ -63,7 +63,11 @@ export default function JobCard({ detail, tags, changeFilters }) {
           h={{ base: "50px", lg: "80px" }}
           position={"relative"}
         >
-          <Image alt={`${detail.company} logo`} src={detail.logo} fill></Image>
+          <Image
+            alt={`${detail.company} logo`}
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${detail.logo}`}
+            fill
+          />
         </Box>
       </CardHeader>
 
