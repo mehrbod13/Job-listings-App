@@ -1,20 +1,21 @@
 import { Box, Image } from "@chakra-ui/react";
 
 const HeaderImage = () => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   return (
     <>
       <Image
         alt="hero bg"
-        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${detail.logo}`}
+        src={`${basePath}/images/bg-header-mobile.svg`}
         display={{ md: "none" }}
         position={"absolute"}
         width={"100%"}
         height={"100%"}
       />
-
       <Image
         alt="hero bg"
-        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${detail.logo}`}
+        src={`${basePath}/images/bg-header-desktop.svg`}
         display={{ base: "none", md: "block" }}
         position={"absolute"}
         width={"100%"}
