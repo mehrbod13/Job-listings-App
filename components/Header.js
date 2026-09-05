@@ -5,7 +5,7 @@ const HeaderImage = () => {
     <>
       <Image
         alt="hero bg"
-        src="/images/bg-header-mobile.svg"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${detail.logo}`}
         display={{ md: "none" }}
         position={"absolute"}
         width={"100%"}
@@ -14,7 +14,7 @@ const HeaderImage = () => {
 
       <Image
         alt="hero bg"
-        src="/images/bg-header-desktop.svg"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${detail.logo}`}
         display={{ base: "none", md: "block" }}
         position={"absolute"}
         width={"100%"}
